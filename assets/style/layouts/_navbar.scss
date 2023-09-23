@@ -1,2 +1,46 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  height: 4rem;
+  padding-block: 0.5rem;
+  background-color: var(--background);
 
+  .logo {
+    padding-inline: 1rem;
+
+    .logo_anchor {
+      background-image: url(/assets/images/logoo.png);
+      width: 9rem;
+      height: 3.5rem;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: 0;
+      background-size: 110%;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .search {
+    padding-inline: 3.5rem;
+
+    .search-bar {
+      width: 17rem;
+      height: 2.2rem;
+      background-color: var(--white-alpha-20);
+      border-style: none;
+      outline: none;
+      color: var(--white);
+      border-radius: 0.3rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: 0.2s ease-in-out;
+    }
+
+    .search-bar:hover {
+      border: 0.1rem solid var(--white);
+    }
+  }
 }

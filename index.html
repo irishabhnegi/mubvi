@@ -3,20 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./dist/style.css" />
     <title>mubvi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <script defer type="module" src="/assets/javascript/controller.js"></script>
   </head>
   <body>
-    <nav>
+    <header>
       <div class="logo">
-        <a>
-          <img src="/assets/images/M.png" alt="logo" />
-        </a>
+        <a href="#" class="logo_anchor"></a>
       </div>
 
       <div class="search">
-        <input type="text" />
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search any Movies..." />
       </div>
-    </nav>
+    </header>
+
+    <main class="container">
+      <aside class="sidebar">
+        <div class="language">
+          <h2 class="language-title">Language</h2>
+          <div class="language-list">
+            <h2 class="language-list-element">English</h2>
+            <h2 class="language-list-element">Hindi</h2>
+            <h2 class="language-list-element">Tamil</h2>
+          </div>
+        </div>
+
+        <div class="genre">
+          <h2 class="genre-title">Genre</h2>
+          <div class="genre-list">
+            <h2 class="genre-list-element">TV Movie</h2>
+            <h2 class="genre-list-element">Advanture</h2>
+            <h2 class="genre-list-element">Fantasy</h2>
+            <h2 class="genre-list-element">Animation</h2>
+            <h2 class="genre-list-element">Drama</h2>
+            <h2 class="genre-list-element">Horror</h2>
+            <h2 class="genre-list-element">Action</h2>
+            <h2 class="genre-list-element">Comedy</h2>
+            <h2 class="genre-list-element">History</h2>
+            <h2 class="genre-list-element">Western</h2>
+            <h2 class="genre-list-element">Thriller</h2>
+            <h2 class="genre-list-element">Crime</h2>
+            <h2 class="genre-list-element">Documentary</h2>
+            <h2 class="genre-list-element">Music</h2>
+            <h2 class="genre-list-element">Romance</h2>
+            <h2 class="genre-list-element">Mystery</h2>
+            <h2 class="genre-list-element">Family</h2>
+            <h2 class="genre-list-element">Science Fiction</h2>
+            <h2 class="genre-list-element">War</h2>
+          </div>
+        </div>
+      </aside>
+
+      <section class="dynamic-container"></section>
+    </main>
   </body>
 </html>
