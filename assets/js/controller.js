@@ -1,3 +1,11 @@
-import response from './model'
+import { state, getNowPlaying } from './model.js'
+import view from './view.js'
 
-console.log(response)
+const controlNowPlaying = async function () {
+  await getNowPlaying()
+
+  const { nowPlaying } = state
+
+  view.render(nowPlaying)
+}
+controlNowPlaying()

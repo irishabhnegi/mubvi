@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="./dist/style.css" />
-    <script defer type="module" src="/assets/javascript/controller.js"></script>
+    <script defer type="module" src="/assets/js/controller.js"></script>
   </head>
   <body>
     <header>
@@ -64,24 +64,32 @@
       <section class="dynamic-container">
         <div
           class="banner"
-          style="background-image: url(/assets/images/slider-banner.jpg)">
+          style="
+            background-image: linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.504),
+                transparent
+              ),
+              url('assets/images/slider-banner.jpg');
+          ">
           <div class="banner-left">
-            <h1>Black Panthar fbamnbfmnafnasf</h1>
+            <h1>Black Panthar: Wakanda forever</h1>
 
             <p class="date">2022 <span class="rating">8.4</span></p>
 
             <p class="catogaries">Action, Romance, Comedy</p>
             <p class="discription">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Isatabsdhjasbfasjfafa odit assumenda.snkjdbnfjsbfsd fsfzsdzsdf
-              dfsdf
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.lorem20
+              dfsdf Lorem ipsum dolor, sit amet consectetur
             </p>
 
             <button class="watch-now-btn">
               <img src="/assets/images/play_circle.png" alt="" /> Watch Now
             </button>
           </div>
-          <div class="banner-right"></div>
+          <div class="banner-right">
+            <div class="banner-slider"></div>
+          </div>
         </div>
       </section>
     </main>
